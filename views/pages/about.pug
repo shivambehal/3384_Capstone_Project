@@ -1,0 +1,20 @@
+extends ../templates/base/structure.pug
+
+block meta
+  - metaTitle = 'About'
+  - metaDesc = 'Protecting your information and anonymity against global surveillance.'
+  - ogMetaTitle = 'Priv.Cloud - About'
+  - ogMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+  - twitterMetaTitle = 'Priv.Cloud - About'
+  - twitterMetaDesc = 'Protecting your information and anonymity against global surveillance.';
+  include ../templates/base/meta.pug
+block contents
+  .row.row-cols-1.row-cols-md-1.g-4.text-white
+    // Primary
+    .col
+      .p-4.card.bg-dark
+        .ps-4.py-5
+          // Title
+          h1.display-4.fw-bold About
+          // Content
+          p.col-md-8.fs-4 <b><i>Coming Soon!</i></b>

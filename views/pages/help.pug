@@ -1,0 +1,31 @@
+extends ../templates/base/structure.pug
+
+block meta
+  - metaTitle = 'Support';
+  - metaDesc = 'Protecting your information and anonymity against global surveillance.'
+  - ogMetaTitle = 'Priv.Cloud - Support'
+  - ogMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+  - twitterMetaTitle = 'Priv.Cloud - Support'
+  - twitterMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+  include ../templates/base/meta.pug
+block contents
+  .py-5
+
+    .card-header.text-center.text-white.border-info
+      h1 Support
+
+    .card-group
+
+      // Ticket
+      .card.bg-dark.text-center.text-white
+        .card-header
+          h1.card-title
+            span.badge.badge-dark-custom Email
+        .card-body
+          p.card-text
+            b For issues, Contact on below Email 
+        .card-footer
+          a.btn.btn-light(href='mailto:c0779571@mylambton.ca', target='_blank') Email Support
+          br
+          br
+          p c0779571@mylambton.ca

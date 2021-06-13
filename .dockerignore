@@ -1,0 +1,9 @@
+node_modules
+npm_debug.log
+.vscode
+.github
+.gitignore
+CODE_OF_CONDUCT.md
+docker-compose.yml
+LICENSE
+README.md

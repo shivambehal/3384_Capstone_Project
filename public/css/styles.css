@@ -1,0 +1,24 @@
+body {
+    padding-top: 56px;
+    background-color: #191b1f;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

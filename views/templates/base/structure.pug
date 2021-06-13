@@ -1,0 +1,40 @@
+doctype html
+head
+
+  // Meta tags
+  block meta
+    - metaTitle = 'Priv.Cloud'
+    - metaDesc = 'Protecting your information and anonymity against global surveillance.'
+    - ogMetaTitle = 'Priv.Cloud'
+    - ogMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+    - twitterMetaTitle = 'Priv.Cloud'
+    - twitterMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+    include meta.pug
+
+  // Scripts and styles
+  block scripts
+    // Ackee analytic script
+    script(async src="https://ackee.silkky.cloud/ackeesilkky.js" data-ackee-server="https://ackee.silkky.cloud" data-ackee-domain-id="55590a76-d85d-4298-89dd-3f971e6b5709")
+    // Bootstrap core CSS
+    link(href='../css/bootstrap.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='../css/styles.css', rel='stylesheet')
+    // Bootstrap core JavaScript
+    script(src='../js/bootstrap.bundle.min.js')
+
+body
+
+  // Navigation
+  include nav.pug
+
+  // Page Content
+  .container.mt-5
+    block contents
+
+  // Footer
+  block footer
+    .py-5
+      footer.py-1.bg-dark.text-center.fixed-bottom
+        p.m-0.text-white
+          a.btn.btn-sm.text-white(href='https://github.com/shivambehal/3384_Capstone_Project', target='_blank')
+            b Copyleft Priv.Cloud

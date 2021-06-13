@@ -1,0 +1,22 @@
+extends ../templates/base/structure.pug
+
+block meta
+  - var metaTitle = '404'
+  - var metaDesc = 'Page not found.'
+  - var ogMetaTitle = 'Silkky.Cloud - 404'
+  - var ogMetaDesc = 'Page not found.'
+  - var twitterMetaTitle = 'Silkky.Cloud - 404'
+  - var twitterMetaDesc = 'Page not found.'
+  include ../templates/base/meta.pug
+block contents
+  // Error Message
+  .p-4.mb-4.mt-5.text-white.bg-dark.rounded-3
+    .container-fluid.ps-4.py-5
+      div
+        // Title
+        a(href='../', type='button') < Return to safety
+        h1.display-1.fw-bold
+          .text-white 404
+        // Description
+        p.col-md-8.fs-4
+          | We can't find that :(

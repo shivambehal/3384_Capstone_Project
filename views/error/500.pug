@@ -1,0 +1,22 @@
+extends ../templates/base/structure.pug
+
+block meta
+  - var metaTitle = '500'
+  - var metaDesc = 'Server error.'
+  - var ogMetaTitle = 'Priv.Cloud - 500'
+  - var ogMetaDesc = 'Server error.'
+  - var twitterMetaTitle = 'Priv.Cloud - 500'
+  - var twitterMetaDesc = 'Server error.'
+  include ../templates/base/meta.pug
+block contents
+  // Error Message
+  .p-4.mb-4.mt-5.text-white.bg-dark.rounded-3
+    .container-fluid.ps-4.py-5
+      div
+        // Title
+        a(href='../', type='button') < Return to safety
+        h1.display-1.fw-bold
+          .text-white 500
+        // Description
+        p.col-md-8.fs-4
+          | Server Error

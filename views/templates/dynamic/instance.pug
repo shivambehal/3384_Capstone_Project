@@ -1,0 +1,48 @@
+.col
+  .card.text-white.bg-dark.h-100
+    // Instance
+    case instanceType
+      when 0
+        // Normal
+        .card-body
+          h4.card-title #{instanceTitle}
+          p.card-text
+            | #{instanceDesc}
+        .card-footer
+          a.btn.btn-outline-light(href=instanceUrl, target='_blank')
+            | #{instanceButton}
+            svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+              path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+      when 1
+        // Down
+        .card-body
+          h4.card-title #{instanceTitle} <span class="badge bg-danger">Down</span>
+          p.card-text
+            | #{instanceDesc}
+        .card-footer
+          a.btn.btn-outline-light.disabled(href=instanceUrl, target='_blank')
+            | #{instanceButton}
+            svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+              path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+      when 2
+        // Coming Soon
+        .card-body
+          h4.card-title #{instanceTitle} <span class="badge bg-info">Coming Soon</span>
+          p.card-text
+            | #{instanceDesc}
+        .card-footer
+          a.btn.btn-outline-light.disabled(href=instanceUrl, target='_blank')
+            | #{instanceButton}
+            svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+              path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+      when 3
+        // New
+        .card-body
+          h4.card-title #{instanceTitle} <span class="badge bg-info">New</span>
+          p.card-text
+            | #{instanceDesc}
+        .card-footer
+          a.btn.btn-outline-light(href=instanceUrl, target='_blank')
+            | #{instanceButton}
+            svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+              path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')

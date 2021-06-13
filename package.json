@@ -1,0 +1,31 @@
+{
+  "name": "priv.cloud",
+  "version": "0.1.3",
+  "description": "Source code for priv.cloud",
+  "main": "server.js",
+  "scripts": {
+    "test": "exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivambehal/3384_Capstone_Project.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Shivam",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/shivambehal/3384_Capstone_Project/issues"
+  },
+  "homepage": "https://github.com/shivambehal/3384_Capstone_Project/",
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.1",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {}
+}
