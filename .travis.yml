@@ -1,14 +1,15 @@
+language: node_js
+
 sudo: required
+
 services:
     - docker
-
-language: node_js
 
 before_install:
     - docker build -t shivambehal/capstone_project -f Dockerfile .
 
 script:
-    - docker run -e CI=true shivambehal/capstone_project
+    - docker run -e CI=true shivambehal/capstone_project npm install
 
 deploy:
     provider: elasticbeanstalk
