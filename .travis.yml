@@ -1,0 +1,21 @@
+sudo: required
+services:
+    - docker
+
+before_install:
+    - docker build -t shivambehal/capstone_project -f Dockerfile.dev .
+
+script:
+    - docker run -e CI=true shivambehal/capstone_project
+
+deploy:
+    provider: elasticbeanstalk
+    region: "ca-central-1"
+    app: "privcloud"
+    env: "Privcloud-env-1"
+    bucket_name: "elasticbeanstalk-ca-central-1-958094583465"
+    bucket_path: "privcloud"
+    on:
+        branch: main
+    access-key-id: "$aws_access_key_id"
+    secret_acess_key: "$aws_secret_access_key"

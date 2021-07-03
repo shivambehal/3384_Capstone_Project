@@ -1,7 +1,7 @@
 'use strict';
 
 // Host
-const PORT = '8080';
+const PORT = '80';
 const HOST = '0.0.0.0';
 // App constraints
 const express = require('express');
