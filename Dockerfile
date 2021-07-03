@@ -22,7 +22,7 @@ RUN addgroup -S priv \
   && chmod 700 /home/priv/app \
   && chown -R priv:priv /home/priv/
 
-EXPOSE 8080
+EXPOSE 80
 
 # Start app
 USER priv
