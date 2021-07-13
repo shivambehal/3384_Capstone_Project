@@ -32,10 +32,7 @@ app.use(
 app.get('/', function (req, res) {
   res.render('pages/index')
 });
-// Donate Directory
-app.get('/contribute', function (req, res) {
-  res.render('pages/contribute')
-});
+
 // Help Directory
 app.get('/help', function (req, res) {
   res.render('pages/help')
@@ -44,18 +41,7 @@ app.get('/help', function (req, res) {
 app.get('/about', function (req, res) {
   res.render('pages/about')
 });
-// Terms of Service Directory
-app.get('/tos', function (req, res) {
-  res.render('pages/tos')
-});
-// Privacy Policy Directory
-app.get('/privacy', function (req, res) {
-  res.render('pages/privacy')
-});
-// Legal Notice Directory
-app.get('/legal', function (req, res) {
-  res.render('pages/legal')
-});
+
 // Error Handling
 // 404
 app.use(function (req, res, next) {
