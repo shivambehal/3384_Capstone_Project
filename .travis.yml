@@ -1,5 +1,8 @@
 language: node_js
 
+notifications:
+  slack: 2021scbd33843:3196VFcJQxQppWKFQD8AnKG0
+
 sudo: required
 
 services:
