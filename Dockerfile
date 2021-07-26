@@ -1,4 +1,3 @@
-# Mount Node Alpine
 # NODE production
 FROM node:16-alpine
 ARG NODE_ENV=production
@@ -9,14 +8,13 @@ WORKDIR /home/priv/app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
-# Install production dependencies
+# Install npm production dependencies
 RUN npm ci --only=production
 
-# Copy app source
+# Copying app source
 COPY . .
 
-# Add user 
-# directory permissions
+# Adding user & directory permissions
 RUN addgroup -S priv \
   && adduser -S priv -G priv \
   && chmod 700 /home/priv/app \
@@ -24,6 +22,6 @@ RUN addgroup -S priv \
 
 EXPOSE 8080
 
-# Start app
+# Starting app
 USER priv
 CMD [ "node", "server.js" ]
