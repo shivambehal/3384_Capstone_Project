@@ -14,6 +14,13 @@ before_install:
 script:
     - docker run -e CI=true shivambehal/capstone_project npm install
 
+after_sucess:
+    # Log in to the docker CLI 
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+    # Pushing our image to docker hub
+    - docker push shivambehal/capstone_project
+
+
 deploy:
     provider: elasticbeanstalk
     region: "ca-central-1"
