@@ -9,7 +9,7 @@ services:
     - docker
 
 before_install:
-    - docker build -t shivambehal/capstone_project -f Dockerfile .
+    - docker build -t shivambehal/capstone_project:"$TRAVIS_BUILD_ID" -f Dockerfile .
 
 script:
     - docker run -e CI=true shivambehal/capstone_project npm install
