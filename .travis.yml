@@ -18,7 +18,7 @@ after_sucess:
     # Log in to the docker CLI 
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     # Pushing our image to docker hub
-    - docker push shivambehal/capstone_project
+    - docker push shivambehal/capstone_project:"$TRAVIS_BUILD_ID"
 
 
 deploy:
