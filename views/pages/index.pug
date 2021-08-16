@@ -75,7 +75,7 @@ block contents
     include ../templates/dynamic/instance.pug
 
       // Outline
-    - instanceType = 3
+    - instanceType = 0
     - instanceTitle = 'Outline 📖'
     - instanceDesc = 'The fastest knowledge base and wiki for modern teams. Beautiful, organized, feature rich, and markdown compatible.'
     - instanceUrl = 'https://outline.privcloud.ml/'
@@ -83,7 +83,7 @@ block contents
     include ../templates/dynamic/instance.pug
   
       // Vaultwarden
-    - instanceType = 3
+    - instanceType = 0
     - instanceTitle = 'Vaultwarden 🔐'
     - instanceDesc = 'Vaultwarden provides the most convenient and secure method for teams and individuals to store and share sensitive data from any device. End-to-end encryption protects your private information before it ever leaves your device.'
     - instanceUrl = 'https://vault.privcloud.ml/'
@@ -91,9 +91,17 @@ block contents
     include ../templates/dynamic/instance.pug
 
       // Pi-hole
-    - instanceType = 3
+    - instanceType = 0
     - instanceTitle = 'Pi-hole ⛔' 
     - instanceDesc = 'Pi-hole is a DNS sinkhole and a Linux network-level advertising and Internet tracker blocking application. Pi-hole offers the capacity to prevent both regular internet advertising and adverts found in unusual locations such as smart TVs and mobile operating systems.'
     - instanceUrl = 'https://ad.privcloud.ml/admin/'
     - instanceButton = 'Sink!'
+    include ../templates/dynamic/instance.pug
+
+      // Jupyter Notebook
+    - instanceType = 3
+    - instanceTitle = 'Jupyter Notebook 📚' 
+    - instanceDesc = 'Jupyter Notebook is an open-source web app that lets you create and share documents with live code, equations, visualisations, and narrative prose. Data cleansing and transformation, numerical simulation, statistical modelling, data visualisation, machine learning, and many more applications are all possible.'
+    - instanceUrl = 'https://lab.privcloud.ml/'
+    - instanceButton = 'Code!'
     include ../templates/dynamic/instance.pug
