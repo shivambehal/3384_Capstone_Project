@@ -14,6 +14,7 @@ RUN npm ci --only=production
 # Copying app source
 COPY . .
 
+# Creating and Adding dir
 # Adding user & directory permissions
 RUN addgroup -S priv \
   && adduser -S priv -G priv \
